@@ -70,7 +70,7 @@
 
 
 #ifdef  __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 

@@ -54,6 +54,7 @@
 #include <gmssl/oid.h>
 #include <gmssl/asn1.h>
 #include <gmssl/error.h>
+namespace gm {
 
 
 /*
@@ -959,4 +960,5 @@ int test_asn1_object_identifier(void)
 		printf("%d %s\n", oid, asn1_object_identifier_name(oid));
 	}
 	return 1;
+}
 }

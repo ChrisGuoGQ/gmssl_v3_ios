@@ -54,6 +54,7 @@
 #include <gmssl/sm3.h>
 #include <gmssl/error.h>
 #include "endian.h"
+namespace gm {
 
 
 #define SM2_SIGNATURE_MAX_DER_SIZE 77
@@ -280,4 +281,5 @@ int sm2_set_public_key(SM2_KEY *key, const uint8_t public_key[64])
 {
 	memcpy(&key->public_key, public_key, 64);
 	return 1;
+}
 }

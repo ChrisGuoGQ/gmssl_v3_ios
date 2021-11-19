@@ -60,7 +60,7 @@
 
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 typedef uint32_t uint24_t;

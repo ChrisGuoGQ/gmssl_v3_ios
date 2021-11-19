@@ -53,6 +53,9 @@
 #include <stdint.h>
 #include <stdlib.h>
 
+#ifdef __cplusplus
+namespace gm { 
+#endif
 
 int rand_bytes(uint8_t *buf, size_t len);
 

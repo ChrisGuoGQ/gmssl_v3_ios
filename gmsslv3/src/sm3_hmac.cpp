@@ -50,7 +50,7 @@
 #include <string.h>
 #include <gmssl/sm3.h>
 #include <gmssl/error.h>
-
+namespace gm {
 /**
  * HMAC_k(m) = H((k ^ opad) || H((k ^ ipad) || m))
  * pseudo-code:
@@ -121,4 +121,5 @@ void sm3_hmac(const uint8_t *data, size_t data_len,
 	sm3_hmac_init(&ctx, key, key_len);
 	sm3_hmac_update(&ctx, data, data_len);
 	sm3_hmac_finish(&ctx, mac);
+}
 }

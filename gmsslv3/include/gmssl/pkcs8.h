@@ -57,7 +57,7 @@
 #include <gmssl/pem.h>
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 

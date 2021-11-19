@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2014 - 2020 The GmSSL Project.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -59,18 +59,18 @@
 
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
-//#define GMSSL_HAVE_UINT128
-//#ifdef GMSSL_HAVE_UINT128
-//typedef unsigned __int128 gf128_t;
-//#else
+#define GMSSL_HAVE_UINT128
+#ifdef GMSSL_HAVE_UINT128
+typedef unsigned __int128 gf128_t;
+#else
 typedef struct {
 	uint64_t hi;
 	uint64_t lo;
 } gf128_t;
-//#endif
+#endif
 
 gf128_t gf128_from_hex(const char *s);
 int gf128_equ_hex(gf128_t a, const char *s);

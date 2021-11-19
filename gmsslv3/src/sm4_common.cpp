@@ -151,3 +151,4 @@ const uint32_t SM4_T[256] = {
 	0x9d78e5e5U, 0x56edbbbbU, 0x235e7d7dU, 0xc63ef8f8U,
 	0x8bd45f5fU, 0xe7c82f2fU, 0xdd39e4e4U, 0x68492121U,
 };
+

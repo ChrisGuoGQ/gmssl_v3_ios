@@ -82,7 +82,7 @@
 #define HASH_DRBG_RESEED_INTERVAL	((uint64_t)1 << 48)
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 

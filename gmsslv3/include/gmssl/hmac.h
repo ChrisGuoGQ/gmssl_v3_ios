@@ -54,7 +54,7 @@
 
 
 #ifdef  __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 #define HMAC_MAX_SIZE	(DIGEST_MAX_SIZE)

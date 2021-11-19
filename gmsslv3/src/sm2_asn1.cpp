@@ -53,6 +53,8 @@
 #include <gmssl/pem.h>
 #include <gmssl/error.h>
 
+namespace gm {
+
 void sm2_point_to_compressed_octets(const SM2_POINT *P, uint8_t out[33])
 {
 	*out++ = (P->y[31] & 0x01) ? 0x03 : 0x02;
@@ -587,3 +589,4 @@ int sm2_public_key_digest(const SM2_KEY *sm2_key, uint8_t dgst[32])
 	return 1;
 }
 
+}

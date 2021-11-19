@@ -55,7 +55,7 @@
 #include <sys/types.h>
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 

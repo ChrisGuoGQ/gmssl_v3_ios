@@ -58,6 +58,7 @@
 #include <gmssl/error.h>
 #include "endian.h"
 
+namespace gm {
 
 /*
 
@@ -1072,4 +1073,5 @@ int asn1_length_is_zero(size_t len)
 		return 0;
 	}
 	return 1;
+}
 }

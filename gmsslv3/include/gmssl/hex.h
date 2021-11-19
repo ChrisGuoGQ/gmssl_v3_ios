@@ -58,7 +58,7 @@
 
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 int hex_to_bytes(const char *in, size_t inlen, uint8_t *out, size_t *outlen);

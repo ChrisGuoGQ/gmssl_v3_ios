@@ -53,6 +53,8 @@
 #include <gmssl/sm2.h>
 #include <gmssl/error.h>
 
+namespace gm {
+
 // FIXME: 缺乏打印公钥的函数，有时候SM2_KEY中只有公钥，没有私钥
 int sm2_key_print(FILE *fp, const SM2_KEY *key, int format, int indent)
 {
@@ -114,4 +116,5 @@ int sm2_ciphertext_print(FILE *fp, const SM2_CIPHERTEXT *c, int format, int inde
 	format_bytes(fp, format, indent, "hash", c->hash, 32);
 	format_bytes(fp, format, indent, "ciphertext", c->ciphertext, c->ciphertext_size);
 	return 1;
+}
 }

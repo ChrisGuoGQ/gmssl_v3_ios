@@ -59,6 +59,8 @@
 #include <gmssl/rand.h>
 #include <gmssl/cms.h>
 
+namespace gm {
+
 // 这个是干什么用的?
 int find_cert(X509_CERTIFICATE *cert,
 	const uint8_t *certs, size_t certslen,
@@ -2532,3 +2534,4 @@ int cms_open_and_verify(
 	return -1;
 }
 
+}

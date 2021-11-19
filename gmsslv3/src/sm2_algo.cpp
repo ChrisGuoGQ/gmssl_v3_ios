@@ -54,6 +54,7 @@
 #include <gmssl/error.h>
 #include "endian.h"
 
+namespace gm {
 
 typedef uint64_t bignum_t[8];
 
@@ -1664,4 +1665,5 @@ int sm2_ecdh(const SM2_KEY *key, const SM2_POINT *peer_public, SM2_POINT *out)
 	point_mul(P, d, P);
 	point_to_bytes(P, (uint8_t *)out);
 	return 1;
+}
 }

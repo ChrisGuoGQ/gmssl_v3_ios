@@ -59,7 +59,7 @@
 #include <gmssl/asn1.h>
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 

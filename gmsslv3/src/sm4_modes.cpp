@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2021 - 2021 The GmSSL Project.  All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -50,6 +50,7 @@
 #include <gmssl/error.h>
 #include <gmssl/gcm.h>
 #include "mem.h"
+namespace gm {
 
 void sm4_cbc_encrypt(const SM4_KEY *key, const uint8_t iv[16],
 	const uint8_t *in, size_t nblocks, uint8_t *out)
@@ -233,4 +234,5 @@ int sm4_gcm_decrypt(const SM4_KEY *key, const uint8_t *iv, size_t ivlen,
 		left -= len;
 	}
 	return 1;
+}
 }

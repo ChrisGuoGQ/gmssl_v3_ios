@@ -10,10 +10,11 @@
 #include <string.h>
 #include <stdlib.h>
 #include <gmssl/sm2.h>
+using namespace gm;
 
 @implementation gmsslv3
-+ (void)testsm {
 
++ (void)testsm {
     SM2_KEY key;
     SM2_SIGN_CTX ctx;
     uint8_t msg[] = "Hello World!";

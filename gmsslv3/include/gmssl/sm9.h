@@ -50,7 +50,7 @@
 #define GMSSL_SM9_H
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 

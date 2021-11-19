@@ -55,7 +55,7 @@ OCSPSigning * Redistribution and use in source and binary forms, with or without
 
 
 #ifdef __cplusplus
-extern "C" {
+namespace gm { 
 #endif
 
 
